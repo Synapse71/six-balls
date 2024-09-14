@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(10, 30px); /* 设置按钮数量与棋盘列数一致 */
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 30px;  /* 按钮宽度与棋盘格子一致 */
+    height: 30px; /* 按钮高度与棋盘格子一致 */
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    gap: 2px;
+    margin: 20px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+.red { background-color: red; }
+.blue { background-color: blue; }
+.green { background-color: green; }
+.yellow { background-color: yellow; }
+.purple { background-color: purple; }
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 20px;
+}
+
+.piece-display {
+    text-align: center;
+}
+
+.piece {
+    display: grid;
+    grid-template-columns: repeat(2, 30px); /* 2x2 棋子的布局 */
+    margin-top: 10px;
+}
+
+/* 调整旋转按钮的样式 */
+#rotate-clockwise, #rotate-counterclockwise {
+    width: 100px;  /* 增加按钮的宽度 */
+    height: 40px; /* 调整按钮高度 */
+    margin: 5px;
+    font-size: 14px;  /* 调整字体大小以适应按钮 */
+    text-align: center;
+    white-space: normal; /* 允许文字换行 */
+}
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六连珠游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls" id="controls"></div> <!-- 生成按钮选择列 -->
+    <div class="game-container" id="game-container"></div>
+
+    <div class="info-container">
+        <div class="piece-display">
+            <h3>当前棋子</h3>
+            <div id="current-piece" class="piece"></div>
+        </div>
+        <div class="piece-display">
+            <h3>下一个棋子</h3>
+            <div id="next-piece" class="piece"></div>
+        </div>
+    </div>
+
+    <!-- 旋转控制 -->
+    <button id="rotate-clockwise">顺时针旋转</button>
+    <button id="rotate-counterclockwise">逆时针旋转</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
